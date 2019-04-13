@@ -18,7 +18,7 @@
                         <label for="subject" class="form-label">Przedmiot:</label>
                     </div>
                     <div class="column">
-                        <select name="subject" id="subject" class="form-control">
+                        <select name="subject" id="subject" class="form-control" required>
                             <option value="0">Wybierz przedmiot...</option>
                             <option value="1">Technologie multimedialne</option>
                             <option value="2">Sztuczna inteligencja</option>
@@ -28,14 +28,22 @@
                 </div>
                 <div class="row">
                     <div class="column">
+                        <label for="password" class="form-label">E-mail:</label>
+                    </div>
+                    <div class="column">
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
                         <label for="password" class="form-label">Hasło:</label>
                     </div>
                     <div class="column">
-                        <input type="password" id="password" name="password" class="form-control form-error">
+                        <input type="password" id="password" name="password" class="form-control" required minlength="6" maxlength="16">
                     </div>
                 </div>
                 <div class="row rules-control">
-                    <input type="checkbox" id="rules" name="rules" /> 
+                    <input type="checkbox" id="rules" name="rules" required /> 
                     <label for="rules" class="rules-label">Zapoznałem/am się z regulaminem</label>
                 </div>
                 <div class="row row--buttons">
