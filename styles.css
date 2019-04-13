@@ -16,6 +16,28 @@ body {
     align-items: center;
 }
 
+.row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row > .column {
+    padding: 5px 0;
+    text-align: left;
+    
+}
+.row > .column:first-child {
+    width: 30%;
+}
+.row > .column:nth-child(2) {
+    width: 70%;
+}
+
+.row.row--buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .form-container {
     width: 500px;
     padding: 25px;
@@ -27,7 +49,7 @@ body {
 
 .form-container header {
     font-size: 1.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-weight: 500;
 }
 
@@ -43,8 +65,51 @@ video {
     background-color: #000;
 }
 
+.form-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 70%;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, .7);
+}
+
 .form-control {
     padding: 5px 10px;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rules-control {
+    padding: 15px;
+}
+
+.rules-label {
+    font-size: 90%;
+    opacity: .8;
+}
+
+input[type=checkbox] {
+    margin-right: 15px;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    padding: 7px 16px;
+    background-color: #666666;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.02rem;
+    cursor: pointer;
+}
+
+.btn--confirm {
+    background-color: #28a745;
+}
+
+.btn--danger {
+    background-color: #d82235;
 }

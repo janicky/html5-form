@@ -14,7 +14,7 @@
             <form id="form">
                 <div class="row">
                     <div class="column">
-                        <label for="subject">Przedmiot:</label>
+                        <label for="subject" class="form-label">Przedmiot:</label>
                     </div>
                     <div class="column">
                         <select name="subject" id="subject" class="form-control">
@@ -26,18 +26,19 @@
                 </div>
                 <div class="row">
                     <div class="column">
-                        <label for="password">Hasło:</label>
+                        <label for="password" class="form-label">Hasło:</label>
                     </div>
                     <div class="column">
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" class="form-control">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row rules-control">
                     <input type="checkbox" id="rules" name="rules" /> 
-                    <label for="rules">Zapoznałem/am się z regulaminem</label>
+                    <label for="rules" class="rules-label">Zapoznałem/am się z regulaminem</label>
                 </div>
                 <div class="row row--buttons">
-                    <button type="submit">Dalej</button>
+                    <button type="submit" class="btn btn--confirm">Dalej</button>
+                    <button type="reset" class="btn btn--danger">Wyczyść</button>
                 </div>
             </form>
         </div>
