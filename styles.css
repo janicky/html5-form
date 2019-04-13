@@ -126,6 +126,7 @@ input[type=checkbox] {
 }
 
 .overlay {
+    display: block;
     position: fixed;
     background-color: rgba(0, 0, 0, .9);
     top: 0;
@@ -137,4 +138,11 @@ input[type=checkbox] {
     align-items: center;
     color: #fff;
     font-size: 1.2rem;
+    opacity: 1;
+    transition-duration: 500ms;
+}
+
+.overlay.hidden {
+    display: none;
+    opacity: 0;
 }
