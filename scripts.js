@@ -35,7 +35,7 @@ var processing = function() {
     }    
 
     if (logged) {
-        message.innerText = "Zalogowano pomyślnie";
+        message.innerText = "Pomyślnie wysłano formularz";
         message.classList.add("success");
     } else {
         message.innerText = "Nieprawidłowy e-mail lub hasło";
