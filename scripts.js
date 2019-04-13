@@ -28,8 +28,6 @@ var processing = function() {
     var logged = false;
     for (var i = 0; i < users.length; i++) {
         var user = users[i];
-        console.log(email_value, password_value);
-        console.log(user.email, user.password);
         if (user.email === email_value && user.password === password_value) {
             logged = true;
             break;
@@ -38,8 +36,10 @@ var processing = function() {
 
     if (logged) {
         message.innerText = "Zalogowano pomyślnie";
+        message.classList.add("success");
     } else {
         message.innerText = "Nieprawidłowy e-mail lub hasło";
+        message.classList.add("error");
         email.classList.add("form-error");
         password.classList.add("form-error");
     }
@@ -50,6 +50,7 @@ var processing = function() {
 form.addEventListener("submit", function(e) {
     e.preventDefault();
     loading.classList.remove("hidden");
+    message.innerText = "&#160;";
     setTimeout(processing, 1000);
 });
 
