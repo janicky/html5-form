@@ -1,0 +1,13 @@
+body, html {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
